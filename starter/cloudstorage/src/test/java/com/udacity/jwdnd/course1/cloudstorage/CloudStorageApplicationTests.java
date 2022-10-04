@@ -250,7 +250,7 @@ class CloudStorageApplicationTests {
 		webDriverWait.until(ExpectedConditions.titleContains("Home"));
 		notePage.fetchNotePage(driver);
 		//click button to add note
-		//notePage.addNoteButton(webDriverWait, driver);
+		//notePage.addNoteButton(webDriverWait);
 		//add a note
 		//webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("note-title")));
 		//notePage.addTitle();
@@ -339,18 +339,6 @@ class CloudStorageApplicationTests {
 		//get credentials page
 		credentialPage.fetchCredPage(driver);
 
-		//click button to add credential
-		//credentialPage.addCredButton(webDriverWait);
-
-		//add credentials
-		//credentialPage.addCredential(webDriverWait);
-
-		//logout
-		//doLogout();
-
-		//login and go to note tab
-		//doLogIn("Homer", "claw");
-		//credentialPage.fetchCredPage(driver);
 		credentialPage.editCredential(webDriverWait);
 		credentialPage.fetchCredPage(driver);
 
@@ -377,14 +365,6 @@ class CloudStorageApplicationTests {
 
 		//get credential page
 		credentialPage.fetchCredPage(driver);
-
-		//add credential
-//		credentialPage.addCredButton(webDriverWait);
-//		webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("credential-url")));
-//		credentialPage.addCredential(webDriverWait);
-
-		//fetch credential page
-		//credentialPage.fetchCredPage(driver);
 
 		//wait for page to load creds and delete cred
 		credentialPage.deleteNote(webDriverWait, driver);

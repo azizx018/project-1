@@ -67,12 +67,7 @@ public class NotePage {
     public String getDisplayDescription() {
         return String.valueOf(noteDescriptionView.getText());
     }
-//    public void addTitle(){
-//        noteTitle.sendKeys("Hello");
-//    }
-//    public void addDescription() {
-//        noteDescription.sendKeys("Great Day!");
-//    }
+
 
     public void addNote() {
         noteTitle.sendKeys("Hello");
